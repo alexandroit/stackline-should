@@ -4,7 +4,7 @@
     {
       "name": "@stackline/should",
       "path": "README.md",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "baselineVersion": "1.0.0",
       "keywords": [
         "stackline",
@@ -19,8 +19,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/should/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/should/-/should-1.0.0.tgz",
       "baselineIntegrity": "sha512-0h8PXWsXr7e2x8MYnOamRPNwxrTl1ZvoYq/jjNHdgZgHw00EhgPD7NlgpHK8abJzkXY5cNC+VKPsYKdqnUjzsw==",
-      "expectedSha512": "92842b56ec308c70ec6e7908693368c04ba578520c36b608e2ffb632889982867edaf620b39013a6f203dd053783ead29867a44deabfa34aa55e504a4be78a16",
-      "tag": "docs-stackline-should-v1.0.1"
+      "expectedSha512": "be281cd5875e10137f5871eacf9228cd11aa7f1dbec355601b66d45cae08679052fe9946c77df8012b497c679b27084d17393cd70968cc50b21323e4bf701b36",
+      "tag": "docs-stackline-should-v1.0.2"
     }
   ]
 }

@@ -4,13 +4,13 @@
 
 [![npm version](https://img.shields.io/npm/v/@stackline/should.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/should)
 [![license](https://img.shields.io/npm/l/@stackline/should.svg?style=flat-square)](https://github.com/alexandroit/stackline-should)
-[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-should-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-should)
+[![GitHub repository](https://img.shields.io/badge/GitHub-repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-should)
 [![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/should/)
 [![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
 
 **[Documentation](https://alexandro.net/docs/vanilla/should/)** | **[npm](https://www.npmjs.com/package/@stackline/should)** | **[Issues](https://github.com/alexandroit/stackline-should/issues)** | **[Repository](https://github.com/alexandroit/stackline-should)**
 
-**Current package version:** `1.0.1`
+**Current package version:** `1.0.2`
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Item | Value |
 | :--- | :--- |
-| Package | `@stackline/should@1.0.1` |
+| Package | `@stackline/should@1.0.2` |
 | API target | `should@13.2.3` |
 | Supported Node.js | `See supported framework requirements` |
 | License | `MIT` |
