@@ -9,3 +9,12 @@ cjs/
 es6/
 package-lock.json
 /as-function.js
+
+node_modules/
+.package-consumer/
+artifact/
+*.tgz
+
+cjs/
+es6/
+as-function.js

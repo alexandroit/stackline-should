@@ -1,8 +1,9 @@
 /*eslint-env node */
 "use strict";
 
-const nodeResolve = require("rollup-plugin-node-resolve");
+const nodeResolve = require("@rollup/plugin-node-resolve").nodeResolve;
 
+const commonjs = require("@rollup/plugin-commonjs");
 const pkg = require("./package.json");
 
 const banner = `/*!
@@ -19,10 +20,9 @@ module.exports = {
     banner
   },
   plugins: [
+    commonjs(),
     nodeResolve({
-      module: true,
-      jsnext: true,
-      main: true,
+      mainFields: ["module", "jsnext:main", "main"],
       preferBuiltins: false
     })
   ]
