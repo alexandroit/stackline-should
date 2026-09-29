@@ -1008,19 +1008,22 @@
     return pad(str, value, '0');
   }
 
-  var functionNameRE = /^\s*function\s*(\S*)\s*\(/;
-
+  // Preserve upstream function-name parsing without overlapping regex quantifiers.
   function functionName$1(f) {
-    if (f.name) {
-      return f.name;
-    }
-    var matches = f.toString().match(functionNameRE);
-    if (matches === null) {
-      // `functionNameRE` doesn't match arrow functions.
-      return '';
-    }
-    var name = matches[1];
-    return name;
+    if (f.name) return f.name;
+    var source = f.toString();
+    var index = 0;
+    while (index < source.length && /\s/.test(source.charAt(index))) index++;
+    if (source.slice(index, index + 8) !== 'function') return '';
+    index += 8;
+    while (index < source.length && /\s/.test(source.charAt(index))) index++;
+    var start = index;
+    while (index < source.length && !/\s/.test(source.charAt(index))) index++;
+    var end = index;
+    while (index < source.length && /\s/.test(source.charAt(index))) index++;
+    if (source.charAt(index) === '(') return source.slice(start, end);
+    var paren = source.lastIndexOf('(', end - 1);
+    return paren < start ? '' : source.slice(start, paren);
   }
 
   function constructorName(obj) {

@@ -34,7 +34,6 @@
   "license": "MIT",
   "dependencies": {
     "should-equal": "^2.0.0",
-    "should-format": "^3.0.3",
     "should-type": "^1.4.0",
     "should-type-adaptors": "^1.0.1",
     "should-util": "^1.0.0"
@@ -53,7 +52,9 @@
     "UPSTREAM.md",
     "CHANGELOG.md",
     "README.md",
-    "readme.md"
+    "readme.md",
+    "LICENSE-should-format",
+    "lib/vendor/should-format.UPSTREAM.json"
   ],
   "bugs": {
     "url": "https://github.com/alexandroit/stackline-should/issues"

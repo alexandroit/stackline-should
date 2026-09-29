@@ -1,0 +1,16 @@
+{
+  "name": "should-format",
+  "version": "3.0.3",
+  "repository": {
+    "url": "git://github.com/shouldjs/format.git",
+    "type": "git"
+  },
+  "gitHead": "b30a3b5e209dee804ee2791ff58aabcbb7fcb4a4",
+  "tarball": "https://registry.npmjs.org/should-format/-/should-format-3.0.3.tgz",
+  "integrity": "sha512-hZ58adtulAk0gKtua7QxevgUaXTTXxIi8t41L3zo9AHvjXO1/7sdLECuHeIN2SRtYXpNkmhoUP2pdeWgricQ+Q==",
+  "source_file": "es6/should-format.js",
+  "upstream_source_sha256": "91db15e21eebb672dc501dabf7d7700f0096cf709212b78bb9b0e46ce8d8c967",
+  "vendored_source_sha256": "1c3ac2be3037c2367af14414f9009555484f4dda69684388151a64aaa5645f32",
+  "license_file": "LICENSE-should-format",
+  "change": "Replace polynomial-backtracking functionName regex with a linear parser preserving its captures."
+}

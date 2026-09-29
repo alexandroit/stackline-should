@@ -1,0 +1,162 @@
+[
+  {
+    "source": "function foo(a) {}",
+    "expected": "foo"
+  },
+  {
+    "source": "function(a) {}",
+    "expected": ""
+  },
+  {
+    "source": "function () {}",
+    "expected": ""
+  },
+  {
+    "source": "  function named  (a){}",
+    "expected": "named"
+  },
+  {
+    "source": "(x) => x",
+    "expected": ""
+  },
+  {
+    "source": "functionfoo(){}",
+    "expected": "foo"
+  },
+  {
+    "source": "function a(b){c()}",
+    "expected": "a(b){c"
+  },
+  {
+    "source": "function a\n(b){}",
+    "expected": "a"
+  },
+  {
+    "source": "native code",
+    "expected": ""
+  },
+  {
+    "source": "function",
+    "expected": ""
+  },
+  {
+    "source": "  function  (a){}",
+    "expected": ""
+  },
+  {
+    "source": "  function foo (a){}",
+    "expected": "foo"
+  },
+  {
+    "source": "  function foo(bar) (a){}",
+    "expected": "foo(bar)"
+  },
+  {
+    "source": "  function *generator (a){}",
+    "expected": "*generator"
+  },
+  {
+    "source": "  function anonymous (a){}",
+    "expected": "anonymous"
+  },
+  {
+    "source": " \tfunction\t\t(a){}",
+    "expected": ""
+  },
+  {
+    "source": " \tfunction\tfoo\t(a){}",
+    "expected": "foo"
+  },
+  {
+    "source": " \tfunction\tfoo(bar)\t(a){}",
+    "expected": "foo(bar)"
+  },
+  {
+    "source": " \tfunction\t*generator\t(a){}",
+    "expected": "*generator"
+  },
+  {
+    "source": " \tfunction\tanonymous\t(a){}",
+    "expected": "anonymous"
+  },
+  {
+    "source": " \nfunction\n\n(a){}",
+    "expected": ""
+  },
+  {
+    "source": " \nfunction\nfoo\n(a){}",
+    "expected": "foo"
+  },
+  {
+    "source": " \nfunction\nfoo(bar)\n(a){}",
+    "expected": "foo(bar)"
+  },
+  {
+    "source": " \nfunction\n*generator\n(a){}",
+    "expected": "*generator"
+  },
+  {
+    "source": " \nfunction\nanonymous\n(a){}",
+    "expected": "anonymous"
+  },
+  {
+    "source": " \rfunction\r\r(a){}",
+    "expected": ""
+  },
+  {
+    "source": " \rfunction\rfoo\r(a){}",
+    "expected": "foo"
+  },
+  {
+    "source": " \rfunction\rfoo(bar)\r(a){}",
+    "expected": "foo(bar)"
+  },
+  {
+    "source": " \rfunction\r*generator\r(a){}",
+    "expected": "*generator"
+  },
+  {
+    "source": " \rfunction\ranonymous\r(a){}",
+    "expected": "anonymous"
+  },
+  {
+    "source": "  function  (a){}",
+    "expected": ""
+  },
+  {
+    "source": "  function foo (a){}",
+    "expected": "foo"
+  },
+  {
+    "source": "  function foo(bar) (a){}",
+    "expected": "foo(bar)"
+  },
+  {
+    "source": "  function *generator (a){}",
+    "expected": "*generator"
+  },
+  {
+    "source": "  function anonymous (a){}",
+    "expected": "anonymous"
+  },
+  {
+    "source": "  function  (a){}",
+    "expected": ""
+  },
+  {
+    "source": "  function foo (a){}",
+    "expected": "foo"
+  },
+  {
+    "source": "  function foo(bar) (a){}",
+    "expected": "foo(bar)"
+  },
+  {
+    "source": "  function *generator (a){}",
+    "expected": "*generator"
+  },
+  {
+    "source": "  function anonymous (a){}",
+    "expected": "anonymous"
+  }
+]
