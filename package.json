@@ -1,14 +1,14 @@
 {
   "name": "@stackline/should",
   "description": "test framework agnostic BDD-style assertions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "TJ Holowaychuk <tj@vision-media.ca>, Denis Bardadym <bardadymchik@gmail.com>",
   "typings": "./should.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandroit/stackline-should.git"
   },
-  "homepage": "https://github.com/alexandroit/stackline-should#readme",
+  "homepage": "https://alexandro.net/docs/vanilla/should/",
   "scripts": {
     "build": "rollup lib/index.js --format cjs --file cjs/should.js && rollup lib/index.js --format es --file es6/should.js && rollup lib/should.js --format cjs --file as-function.js && rollup -c rollup.config.js --input lib/umd.js --format iife --file should.js && node scripts/normalize-build.mjs",
     "test": "mocha --require ./cjs/should test/*.test.js test/**/*.test.js && node test/stackline.cjs",
@@ -22,11 +22,13 @@
     "bluebird": "3.7.2"
   },
   "keywords": [
+    "stackline",
+    "npm-package",
+    "should",
+    "typescript",
     "test",
     "bdd",
     "assert",
-    "should",
-    "stackline",
     "maintenance-fork"
   ],
   "main": "./cjs/should.js",

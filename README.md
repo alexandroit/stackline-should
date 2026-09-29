@@ -1,30 +1,58 @@
 # @stackline/should
 
-Independent maintenance fork of `should@13.2.3`. Original API, module format, runtime dependency ranges, and supported Node.js engines are preserved.
+> test framework agnostic BDD-style assertions.
 
-```sh
+[![npm version](https://img.shields.io/npm/v/@stackline/should.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/should)
+[![license](https://img.shields.io/npm/l/@stackline/should.svg?style=flat-square)](https://github.com/alexandroit/stackline-should)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-should-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-should)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/should/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
+
+**[Documentation](https://alexandro.net/docs/vanilla/should/)** | **[npm](https://www.npmjs.com/package/@stackline/should)** | **[Issues](https://github.com/alexandroit/stackline-should/issues)** | **[Repository](https://github.com/alexandroit/stackline-should)**
+
+**Current package version:** `1.0.1`
+
+---
+
+## Why this package?
+
+`@stackline/should` is the Stackline-maintained distribution of `should@13.2.3`. It is an independent continuation of [should](https://github.com/shouldjs/should.js); original authors and licenses remain credited below.
+
+## Compatibility
+
+| Item | Value |
+| :--- | :--- |
+| Package | `@stackline/should@1.0.1` |
+| API target | `should@13.2.3` |
+| Supported Node.js | `See supported framework requirements` |
+| License | `MIT` |
+| Main entry | `./cjs/should.js` |
+| Module entry | `./es6/should.js` |
+| Types | `./should.d.ts` |
+| Runtime dependencies | `should-equal, should-type, should-type-adaptors, should-util` |
+
+## Installation
+
+```bash
 npm install @stackline/should
-# Preserve existing imports with an npm alias:
-npm install should@npm:@stackline/should@1.0.0
 ```
 
-See [UPSTREAM.md](UPSTREAM.md) for the exact source and issue review, and [CHANGELOG.md](CHANGELOG.md) for focused maintenance changes. Development and release tooling runs on Node.js 24; that does not change the library runtime requirement.
+Preserve existing imports and plugin resolution with an npm alias:
 
-Maintained by [Stackline](https://alexandro.net/). [Issues](https://github.com/alexandroit/stackline-should/issues) · [npm](https://www.npmjs.com/package/@stackline/should).
+```bash
+npm install should@npm:@stackline/should
+```
 
-## Upstream documentation
+## Usage and API reference
 
-# should.js
+### should.js
 
-[![Join the chat at https://gitter.im/shouldjs/should.js](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/shouldjs/should.js)
 
-[![Build Status](https://travis-ci.org/shouldjs/should.js.svg?branch=master)](https://travis-ci.org/shouldjs/should.js)
 
-[![Selenium Test Status](https://saucelabs.com/browser-matrix/shouldjs.svg)](https://saucelabs.com/u/shouldjs)
 
 _should_ is an expressive, readable, framework-agnostic assertion library. The main goals of this library are __to be expressive__ and __to be helpful__. It keeps your test code clean, and your error messages helpful.
 
-By default (when you `require('should')`) _should_ extends the `Object.prototype` with a single non-enumerable getter that allows you to express how that object should behave. It also returns itself when required with `require`.
+By default (when you `require('@stackline/should')`) _should_ extends the `Object.prototype` with a single non-enumerable getter that allows you to express how that object should behave. It also returns itself when required with `require`.
 
 It is also possible to use should.js without getter (it will not even try to extend Object.prototype), just `require('should/as-function')`. Or if you already use version that auto add getter, you can call `.noConflict` function.
 
@@ -40,7 +68,7 @@ You can take look in [FAQ](https://github.com/shouldjs/should.js/wiki/FAQ).
 
 ## Example
 ```javascript
-var should = require('should');
+var should = require('@stackline/should');
 
 var user = {
     name: 'tj'
@@ -69,13 +97,13 @@ someAsyncTask(foo, function(err, result){
  1. Install it:
 
     ```bash
-    $ npm install should --save-dev
+    $ npm install @stackline/should --save-dev
     ```
 
  2. Require it and use:
 
     ```js
-    var should = require('should');
+    var should = require('@stackline/should');
 
     (5).should.be.exactly(5).and.be.a.Number();
     ```
@@ -89,7 +117,7 @@ someAsyncTask(foo, function(err, result){
   3. For TypeScript users:
 
     ```js
-    import * as should from 'should';
+    import * as should from '@stackline/should';
 
     (0).should.be.Number();
     ```
@@ -114,7 +142,7 @@ should(10).be.exactly(10)
 You can easy install it with npm or bower:
 
 ```sh
-npm install should -D
+npm install @stackline/should -D
 # or
 bower install shouldjs/should.js
 ```
@@ -135,7 +163,7 @@ Please look on usage in [examples](https://github.com/shouldjs/examples)
 
 `.any` allow for assertions with multiple parameters to assert any of the parameters (but not all). This is similar to the native JavaScript [array.some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some).
 
-# Assertions
+### Assertions
 ## chaining assertions
 
 Every assertion will return a `should.js`-wrapped Object, so assertions can be chained.
@@ -239,3 +267,23 @@ Also it is possible use it without extension. Just use `require('should/as-funct
 MIT. See LICENSE for details.
 
 Security maintenance: should-format3.0.3 is vendored with its original MIT license and upstream source hash. Its function-name parser now performs a linear scan instead of overlapping regex quantifiers. All CJS, ESM, standalone and browser outputs use the same corrected source; the external should-format dependency was removed. Ordinary inputs are compared with the upstream helper and adversarial input runs in an isolated process with a timeout.
+
+## Credits and original authors
+
+- Original project: [should](https://github.com/shouldjs/should.js).
+- TJ Holowaychuk.
+- Copyright(c) 2010-2013 TJ Holowaychuk <tj@vision-media.ca>.
+- Copyright(c) 2013-2017 Denis Bardadym <bardadymchik@gmail.com>.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
