@@ -10,7 +10,7 @@
 
 **[Documentation](https://alexandro.net/docs/vanilla/should/)** | **[npm](https://www.npmjs.com/package/@stackline/should)** | **[Issues](https://github.com/alexandroit/stackline-should/issues)** | **[Repository](https://github.com/alexandroit/stackline-should)**
 
-**Current package version:** `1.0.2`
+**Current package version:** `1.0.4`
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Item | Value |
 | :--- | :--- |
-| Package | `@stackline/should@1.0.2` |
+| Package | `@stackline/should@1.0.4` |
 | API target | `should@13.2.3` |
 | Supported Node.js | `See supported framework requirements` |
 | License | `MIT` |
