@@ -1,5 +1,10 @@
 # Stackline changes
 
+## 1.0.3
+
+- Replace Rollup node-resolve's vulnerable deepmerge with the published, security-tested @stackline/deepmerge 1.1.0 using a parent-scoped override.
+- Keep the build dependency security regression, current Node.js security pins, and generated browser metadata in sync.
+
 ## 1.0.0
 
 - Scoped maintenance release preserving upstream library sources, exports, dependency ranges and supported runtime engines.

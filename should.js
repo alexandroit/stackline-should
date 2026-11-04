@@ -1,8 +1,8 @@
 /*!
  * @stackline/should - test framework agnostic BDD-style assertions
- * @version v1.0.0
+ * @version v1.0.3
  * @author TJ Holowaychuk <tj@vision-media.ca>, Denis Bardadym <bardadymchik@gmail.com>
- * @link https://github.com/alexandroit/stackline-should#readme
+ * @link https://alexandro.net/docs/vanilla/should/
  * @license MIT
  */
 
